@@ -1,0 +1,23 @@
+{
+  "name": "unit-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack ",
+    "serve": "webpack --watch",
+    "start": "sh serve.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@_unit/unit": "^1.0.19",
+    "canvas": "^2.11.2",
+    "ts-loader": "^9.5.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
