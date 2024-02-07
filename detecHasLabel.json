@@ -1,0 +1,312 @@
+{
+    "spec": {
+        "type": "`U`&`G`",
+        "name": "untitled",
+        "units": {
+            "detectionshaslabel": {
+                "id": "7a37c0aa-c5b9-48f0-95e1-3e3bfd9d4018",
+                "metadata": {
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                "input": {
+                    "detections": {
+                        "metadata": {
+                            "position": {
+                                "x": 39,
+                                "y": -11
+                            }
+                        }
+                    },
+                    "label": {
+                        "metadata": {
+                            "position": {
+                                "x": -57,
+                                "y": -30
+                            }
+                        }
+                    }
+                },
+                "output": {
+                    "result": {
+                        "metadata": {
+                            "position": {
+                                "x": -57,
+                                "y": 8
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "merges": {},
+        "inputs": {},
+        "outputs": {},
+        "metadata": {
+            "icon": null,
+            "description": "",
+            "complexity": 5
+        },
+        "id": "780051f0-efa4-40ff-869f-a28771805bff",
+        "data": {
+            "uovmklk": {
+                "value": "[{\"label\":2}]",
+                "metadata": {
+                    "position": {
+                        "x": -1752.7701050766414,
+                        "y": 290.79771211416056
+                    }
+                }
+            }
+        }
+    },
+    "specs": {
+        "7a37c0aa-c5b9-48f0-95e1-3e3bfd9d4018": {
+            "type": "`U`&`G`",
+            "name": "detections has label",
+            "units": {
+                "or": {
+                    "id": "62a19cd6-04bd-4e46-a72e-4fa3516ad3fa",
+                    "input": {
+                        "a": {},
+                        "b": {}
+                    },
+                    "output": {
+                        "a or b": {}
+                    },
+                    "metadata": {
+                        "position": {
+                            "x": -3,
+                            "y": -38
+                        }
+                    }
+                },
+                "reduce": {
+                    "id": "5cd76a8a-603b-49e1-bda3-09ad217eb108",
+                    "input": {
+                        "a": {
+                            "metadata": {
+                                "position": {
+                                    "x": -141,
+                                    "y": -58
+                                }
+                            }
+                        },
+                        "next": {
+                            "metadata": {
+                                "position": {
+                                    "x": null,
+                                    "y": null
+                                }
+                            }
+                        },
+                        "init": {
+                            "metadata": {
+                                "position": {
+                                    "x": -161,
+                                    "y": -33
+                                }
+                            },
+                            "constant": true,
+                            "data": "false"
+                        }
+                    },
+                    "output": {
+                        "a[i]": {
+                            "metadata": {
+                                "position": {
+                                    "x": null,
+                                    "y": null
+                                }
+                            }
+                        },
+                        "test": {
+                            "metadata": {
+                                "position": {
+                                    "x": -138,
+                                    "y": 19
+                                }
+                            },
+                            "ignored": true
+                        },
+                        "result": {
+                            "metadata": {
+                                "position": {
+                                    "x": -160,
+                                    "y": -5
+                                }
+                            }
+                        },
+                        "local": {
+                            "metadata": {
+                                "position": {
+                                    "x": null,
+                                    "y": null
+                                }
+                            }
+                        }
+                    },
+                    "metadata": {
+                        "position": {
+                            "x": -99,
+                            "y": -6
+                        }
+                    }
+                },
+                "equals": {
+                    "id": "85204bf6-6692-4686-a785-23127c0594b5",
+                    "input": {
+                        "a": {},
+                        "b": {
+                            "metadata": {
+                                "position": {
+                                    "x": 138,
+                                    "y": -22
+                                }
+                            },
+                            "constant": true,
+                            "data": "3"
+                        }
+                    },
+                    "output": {
+                        "a = b": {}
+                    },
+                    "metadata": {
+                        "position": {
+                            "x": 96,
+                            "y": -5
+                        }
+                    }
+                },
+                "get": {
+                    "id": "9414421d-3376-4438-aa03-7afcd860972c",
+                    "input": {
+                        "obj": {},
+                        "key": {
+                            "metadata": {
+                                "position": {
+                                    "x": 28,
+                                    "y": 68
+                                }
+                            },
+                            "constant": true,
+                            "data": "\"label\""
+                        }
+                    },
+                    "output": {
+                        "value": {}
+                    },
+                    "metadata": {
+                        "position": {
+                            "x": 4,
+                            "y": 47
+                        }
+                    }
+                }
+            },
+            "merges": {
+                "0": {
+                    "reduce": {
+                        "output": {
+                            "a[i]": true
+                        }
+                    },
+                    "get": {
+                        "input": {
+                            "obj": true
+                        }
+                    }
+                },
+                "1": {
+                    "or": {
+                        "input": {
+                            "b": true
+                        }
+                    },
+                    "reduce": {
+                        "output": {
+                            "local": true
+                        }
+                    }
+                },
+                "2": {
+                    "equals": {
+                        "input": {
+                            "a": true
+                        }
+                    },
+                    "get": {
+                        "output": {
+                            "value": true
+                        }
+                    }
+                },
+                "3": {
+                    "or": {
+                        "input": {
+                            "a": true
+                        }
+                    },
+                    "equals": {
+                        "output": {
+                            "a = b": true
+                        }
+                    }
+                },
+                "4": {
+                    "or": {
+                        "output": {
+                            "a or b": true
+                        }
+                    },
+                    "reduce": {
+                        "input": {
+                            "next": true
+                        }
+                    }
+                }
+            },
+            "inputs": {
+                "detections": {
+                    "plug": {
+                        "0": {
+                            "unitId": "reduce",
+                            "pinId": "a",
+                            "kind": "input"
+                        }
+                    },
+                    "ref": false
+                },
+                "label": {
+                    "plug": {
+                        "0": {
+                            "unitId": "equals",
+                            "pinId": "b",
+                            "kind": "input"
+                        }
+                    },
+                    "ref": false
+                }
+            },
+            "outputs": {
+                "result": {
+                    "plug": {
+                        "0": {
+                            "unitId": "reduce",
+                            "pinId": "result",
+                            "kind": "output"
+                        }
+                    },
+                    "ref": false
+                }
+            },
+            "metadata": {
+                "icon": "question",
+                "description": ""
+            },
+            "id": "7a37c0aa-c5b9-48f0-95e1-3e3bfd9d4018"
+        }
+    }
+}
