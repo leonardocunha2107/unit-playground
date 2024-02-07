@@ -12,17 +12,21 @@ export function bundle_editor(myBundle: any) {
                         "position": {
                             "x": 0,
                             "y": 0
+                        },
+                        "component": {
+                            "width": 484,
+                            "height": 348
                         }
                     },
                     "input": {
                         "bundle": {
                             "metadata": {
                                 "position": {
-                                    "x": 37,
-                                    "y": -176
-                                },
-                                "data": stringify(myBundle)
-                            }
+                                    "x": -513,
+                                    "y": -170
+                                }
+                            },
+                            "data": stringify(myBundle)
                         }
                     }
                 }
@@ -35,7 +39,7 @@ export function bundle_editor(myBundle: any) {
                 "description": "",
                 "complexity": 3
             },
-            "id": "4a5879fc-88c9-477c-a89d-a6eba97cb4fc",
+            "id": "ada2c846-a40d-4fb0-b721-94c880b80270",
             "component": {
                 "subComponents": {
                     "bundleeditor": {
@@ -45,8 +49,8 @@ export function bundle_editor(myBundle: any) {
                 "children": [
                     "bundleeditor"
                 ],
-                "defaultWidth": 180,
-                "defaultHeight": 120
+                "defaultWidth": 360,
+                "defaultHeight": 360
             }
         },
         "specs": {
@@ -59,62 +63,123 @@ export function bundle_editor(myBundle: any) {
                         "input": {
                             "graph": {},
                             "done": {
-                                "ignored": true
+                                "ignored": true,
+                                "metadata": {
+                                    "position": {
+                                        "x": -125,
+                                        "y": -26
+                                    }
+                                }
                             }
                         },
                         "output": {
-                            "graph": {}
+                            "graph": {
+                                "metadata": {
+                                    "position": {
+                                        "x": -26,
+                                        "y": 11
+                                    }
+                                }
+                            }
+                        },
+                        "metadata": {
+                            "position": {
+                                "x": -186,
+                                "y": 15
+                            }
                         }
                     },
                     "frombundle": {
                         "id": "de2d42e2-4fca-4a3f-8783-3585c546e88b",
                         "input": {
-                            "bundle": {}
+                            "bundle": {
+                                "metadata": {
+                                    "position": {
+                                        "x": -239,
+                                        "y": 5
+                                    }
+                                }
+                            }
                         },
                         "output": {
                             "graph": {}
+                        },
+                        "metadata": {
+                            "position": {
+                                "x": -288,
+                                "y": 15
+                            }
                         }
                     },
-                    "editor": {
-                        "id": "e80c912e-7508-11ea-966b-436805345ff0",
+                    "app": {
+                        "id": "4181691b-4790-4191-9b03-86c6c968d1b8",
                         "input": {
-                            "style": {},
-                            "attr": {
-                                "ignored": true
+                            "style": {
+                                "ignored": true,
+                                "metadata": {
+                                    "position": {
+                                        "x": -21,
+                                        "y": 74
+                                    }
+                                }
+                            },
+                            "disabled": {
+                                "ignored": true,
+                                "metadata": {
+                                    "position": {
+                                        "x": -23,
+                                        "y": 46
+                                    }
+                                }
                             },
                             "graph": {},
-                            "disabled": {
-                                "ignored": true
-                            },
                             "fullwindow": {
-                                "ignored": true
+                                "ignored": true,
+                                "metadata": {
+                                    "position": {
+                                        "x": -21,
+                                        "y": -44
+                                    }
+                                }
                             },
                             "frame": {
-                                "ignored": true
-                            },
-                            "zoom": {
-                                "ignored": true
-                            },
-                            "controls": {
-                                "ignored": true
+                                "ignored": true,
+                                "metadata": {
+                                    "position": {
+                                        "x": -13,
+                                        "y": 21
+                                    }
+                                }
                             }
                         },
                         "output": {
                             "graph": {
-                                "ignored": true
+                                "ignored": true,
+                                "metadata": {
+                                    "position": {
+                                        "x": 475,
+                                        "y": 11
+                                    }
+                                }
+                            }
+                        },
+                        "metadata": {
+                            "position": {
+                                "x": 318,
+                                "y": 211
                             }
                         }
                     }
                 },
                 "merges": {
                     "0": {
-                        "new": {
-                            "output": {
+                        "app": {
+                            "input": {
                                 "graph": true
                             }
                         },
-                        "editor": {
-                            "input": {
+                        "new": {
+                            "output": {
                                 "graph": true
                             }
                         }
@@ -148,18 +213,12 @@ export function bundle_editor(myBundle: any) {
                     "icon": "question",
                     "description": ""
                 },
-                "render": true,
                 "component": {
                     "subComponents": {
-                        "editor": {
-                            "children": [],
-                            "childSlot": {},
-                            "width": 360,
-                            "height": 360
-                        }
+                        "app": {}
                     },
                     "children": [
-                        "editor"
+                        "app"
                     ],
                     "defaultWidth": 360,
                     "defaultHeight": 360
