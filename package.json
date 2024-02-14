@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@_unit/unit": "1.0.28",
+    "@_unit/unit": "file:../unit",
     "canvas": "^2.11.2",
     "ts-loader": "^9.5.1"
   },
