@@ -458,7 +458,7 @@
                         }
                     }
                 },
-                "DetectPM": {
+                "Detection Inference": {
                     "id": "40eedc04-e25e-47f1-8272-d98b098a0826",
                     "metadata": {
                         "position": {
@@ -519,7 +519,7 @@
                         }
                     }
                 },
-                "DetectPM0": {
+                "Detection Inference0": {
                     "id": "bd822721-495f-4d98-89f7-7f46b05076b1",
                     "input": {
                         "input image": {
@@ -651,14 +651,14 @@
                             "detections": true
                         }
                     },
-                    "DetectPM": {
+                    "Detection Inference": {
                         "output": {
                             "detections": true
                         }
                     }
                 },
                 "1": {
-                    "DetectPM": {
+                    "Detection Inference": {
                         "input": {
                             "input image": true
                         }
@@ -711,7 +711,7 @@
                             "output": true
                         }
                     },
-                    "DetectPM0": {
+                    "Detection Inference0": {
                         "input": {
                             "enc_image": true
                         }
@@ -723,7 +723,7 @@
                             "src": true
                         }
                     },
-                    "DetectPM0": {
+                    "Detection Inference0": {
                         "output": {
                             "output_image": true
                         }
@@ -735,7 +735,7 @@
                             "src": true
                         }
                     },
-                    "DetectPM": {
+                    "Detection Inference": {
                         "output": {
                             "output_image": true
                         }
@@ -766,7 +766,7 @@
                 "output detec": {
                     "plug": {
                         "0": {
-                            "unitId": "DetectPM0",
+                            "unitId": "Detection Inference0",
                             "pinId": "detections",
                             "kind": "output"
                         }
