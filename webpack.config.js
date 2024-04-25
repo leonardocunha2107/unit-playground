@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './test-render.ts',
+    entry: './main.ts',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -22,6 +22,13 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.mjs', '.js'] // Add '.tsx' and '.ts' here
+    },
+    watchOptions: {
+        poll: true,
+        ignored: [
+            // Add paths to ignore here
+            // Do not include your local package
+        ],
     },
     mode: 'development',
     devtool: 'source-map',
