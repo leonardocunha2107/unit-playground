@@ -1,9 +1,9 @@
-import { renderBundle } from './unit/src/client/platform/web/render'
-import { fromBundle } from './unit/src/spec/fromBundle'
-import { BundleSpec } from './unit/src/types/BundleSpec';
-import { bundle_editor } from './bundle_editor.';
-import myBundle from './final.json';
-const _specs = require("./unit/src/system/_specs.js").default;
+import { renderBundle } from 'unit/client/platform/web/render.js'
+import { fromBundle } from 'unit/spec/fromBundle'
+import { BundleSpec } from 'unit/types/BundleSpec';
+import { bundle_editor } from './bundle_editor';
+import myBundle from './double_inference2.json';
+const _specs = require("unit/system/_specs.js").default;
 // import bun
 
 // myBundle.spec.units = {};

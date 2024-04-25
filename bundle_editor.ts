@@ -1,4 +1,4 @@
-import { stringify } from "@_unit/unit/lib/spec/stringify";
+import { stringify } from "unit/spec/stringify";
 
 export function bundle_editor(myBundle: any) {
     return {

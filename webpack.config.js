@@ -21,7 +21,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.mjs', '.js'] // Add '.tsx' and '.ts' here
+        extensions: ['.tsx', '.ts', '.mjs', '.js'], // Add '.tsx' and '.ts' here,
     },
     watchOptions: {
         poll: true,
