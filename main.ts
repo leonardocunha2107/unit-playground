@@ -2,7 +2,7 @@ import { renderBundle } from 'unit/client/platform/web/render.js'
 import { fromBundle } from 'unit/spec/fromBundle'
 import { BundleSpec } from 'unit/types/BundleSpec';
 import { bundle_editor } from './bundle_editor';
-import myBundle from './double_inference2.json';
+import myBundle from './bundle.json';
 const _specs = require("unit/system/_specs.js").default;
 // import bun
 

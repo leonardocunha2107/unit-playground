@@ -428,7 +428,7 @@
                         }
                     }
                 },
-                "DetectPM": {
+                "Inference Detection": {
                     "id": "40eedc04-e25e-47f1-8272-d98b098a0826",
                     "metadata": {
                         "position": {
@@ -522,7 +522,7 @@
                         }
                     }
                 },
-                "DetectPM0": {
+                "Inference Detection0": {
                     "id": "bd822721-495f-4d98-89f7-7f46b05076b1",
                     "input": {
                         "input image": {
@@ -613,14 +613,14 @@
                             "detections": true
                         }
                     },
-                    "DetectPM": {
+                    "Inference Detection": {
                         "output": {
                             "detections": true
                         }
                     }
                 },
                 "1": {
-                    "DetectPM": {
+                    "Inference Detection": {
                         "input": {
                             "input image": true
                         }
@@ -673,7 +673,7 @@
                             "output": true
                         }
                     },
-                    "DetectPM0": {
+                    "Inference Detection0": {
                         "input": {
                             "enc_image": true
                         }
@@ -685,14 +685,14 @@
                             "b[i]": true
                         }
                     },
-                    "DetectPM0": {
+                    "Inference Detection0": {
                         "output": {
                             "detections": true
                         }
                     }
                 },
                 "7": {
-                    "DetectPM0": {
+                    "Inference Detection0": {
                         "output": {
                             "output_image": true
                         }
@@ -704,7 +704,7 @@
                     }
                 },
                 "8": {
-                    "DetectPM": {
+                    "Inference Detection": {
                         "output": {
                             "output_image": true
                         }
@@ -1569,7 +1569,7 @@
         },
         "40eedc04-e25e-47f1-8272-d98b098a0826": {
             "type": "`U`&`G`",
-            "name": "Detect PM",
+            "name": "Inference Detection",
             "units": {
                 "get": {
                     "id": "bc0320e2-2eb8-11eb-a38f-a779bfe81645",
@@ -2201,7 +2201,7 @@
         },
         "bd822721-495f-4d98-89f7-7f46b05076b1": {
             "type": "`U`&`G`",
-            "name": "Detect PM",
+            "name": "Inference Detection",
             "units": {
                 "get": {
                     "id": "bc0320e2-2eb8-11eb-a38f-a779bfe81645",

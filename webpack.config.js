@@ -6,6 +6,9 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    devServer: {
+        static: path.join(__dirname, 'dist')
+    },
     module: {
         rules: [
             {
@@ -21,15 +24,14 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts', '.mjs', '.js'], // Add '.tsx' and '.ts' here,
+        extensions: ['.tsx', '.ts', '.mjs', '.js'],
+
+        alias: {
+            'unit': path.resolve(__dirname, './unit/lib'),
+        },
+
     },
-    watchOptions: {
-        poll: true,
-        ignored: [
-            // Add paths to ignore here
-            // Do not include your local package
-        ],
-    },
+
     mode: 'development',
     devtool: 'source-map',
 };
